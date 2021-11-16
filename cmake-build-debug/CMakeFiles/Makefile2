@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/c_tutorial.dir/all
+all: CMakeFiles/data-type.dir/all
+all: CMakeFiles/first-c-program.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/c_tutorial.dir/clean
+clean: CMakeFiles/data-type.dir/clean
+clean: CMakeFiles/first-c-program.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/c_tutorial.dir
+# Target rules for target CMakeFiles/data-type.dir
 
 # All Build rule for target.
-CMakeFiles/c_tutorial.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_tutorial.dir/build.make CMakeFiles/c_tutorial.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_tutorial.dir/build.make CMakeFiles/c_tutorial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target c_tutorial"
-.PHONY : CMakeFiles/c_tutorial.dir/all
+CMakeFiles/data-type.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data-type.dir/build.make CMakeFiles/data-type.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data-type.dir/build.make CMakeFiles/data-type.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target data-type"
+.PHONY : CMakeFiles/data-type.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/c_tutorial.dir/rule: cmake_check_build_system
+CMakeFiles/data-type.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/c_tutorial.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/data-type.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/c_tutorial.dir/rule
+.PHONY : CMakeFiles/data-type.dir/rule
 
 # Convenience name for target.
-c_tutorial: CMakeFiles/c_tutorial.dir/rule
-.PHONY : c_tutorial
+data-type: CMakeFiles/data-type.dir/rule
+.PHONY : data-type
 
 # clean rule for target.
-CMakeFiles/c_tutorial.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_tutorial.dir/build.make CMakeFiles/c_tutorial.dir/clean
-.PHONY : CMakeFiles/c_tutorial.dir/clean
+CMakeFiles/data-type.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data-type.dir/build.make CMakeFiles/data-type.dir/clean
+.PHONY : CMakeFiles/data-type.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/first-c-program.dir
+
+# All Build rule for target.
+CMakeFiles/first-c-program.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-c-program.dir/build.make CMakeFiles/first-c-program.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-c-program.dir/build.make CMakeFiles/first-c-program.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target first-c-program"
+.PHONY : CMakeFiles/first-c-program.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/first-c-program.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/first-c-program.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/first-c-program.dir/rule
+
+# Convenience name for target.
+first-c-program: CMakeFiles/first-c-program.dir/rule
+.PHONY : first-c-program
+
+# clean rule for target.
+CMakeFiles/first-c-program.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-c-program.dir/build.make CMakeFiles/first-c-program.dir/clean
+.PHONY : CMakeFiles/first-c-program.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

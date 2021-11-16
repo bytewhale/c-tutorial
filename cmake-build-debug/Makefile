@@ -117,41 +117,78 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named c_tutorial
+# Target rules for targets named data-type
 
 # Build rule for target.
-c_tutorial: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_tutorial
-.PHONY : c_tutorial
+data-type: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data-type
+.PHONY : data-type
 
 # fast build rule for target.
-c_tutorial/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_tutorial.dir/build.make CMakeFiles/c_tutorial.dir/build
-.PHONY : c_tutorial/fast
+data-type/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data-type.dir/build.make CMakeFiles/data-type.dir/build
+.PHONY : data-type/fast
 
-01-first-c-program/hello.o: 01-first-c-program/hello.c.o
-.PHONY : 01-first-c-program/hello.o
+#=============================================================================
+# Target rules for targets named first-c-program
+
+# Build rule for target.
+first-c-program: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 first-c-program
+.PHONY : first-c-program
+
+# fast build rule for target.
+first-c-program/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-c-program.dir/build.make CMakeFiles/first-c-program.dir/build
+.PHONY : first-c-program/fast
+
+src/01-first-c-program/hello.o: src/01-first-c-program/hello.c.o
+.PHONY : src/01-first-c-program/hello.o
 
 # target to build an object file
-01-first-c-program/hello.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_tutorial.dir/build.make CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.o
-.PHONY : 01-first-c-program/hello.c.o
+src/01-first-c-program/hello.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-c-program.dir/build.make CMakeFiles/first-c-program.dir/src/01-first-c-program/hello.c.o
+.PHONY : src/01-first-c-program/hello.c.o
 
-01-first-c-program/hello.i: 01-first-c-program/hello.c.i
-.PHONY : 01-first-c-program/hello.i
+src/01-first-c-program/hello.i: src/01-first-c-program/hello.c.i
+.PHONY : src/01-first-c-program/hello.i
 
 # target to preprocess a source file
-01-first-c-program/hello.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_tutorial.dir/build.make CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.i
-.PHONY : 01-first-c-program/hello.c.i
+src/01-first-c-program/hello.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-c-program.dir/build.make CMakeFiles/first-c-program.dir/src/01-first-c-program/hello.c.i
+.PHONY : src/01-first-c-program/hello.c.i
 
-01-first-c-program/hello.s: 01-first-c-program/hello.c.s
-.PHONY : 01-first-c-program/hello.s
+src/01-first-c-program/hello.s: src/01-first-c-program/hello.c.s
+.PHONY : src/01-first-c-program/hello.s
 
 # target to generate assembly for a file
-01-first-c-program/hello.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_tutorial.dir/build.make CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.s
-.PHONY : 01-first-c-program/hello.c.s
+src/01-first-c-program/hello.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-c-program.dir/build.make CMakeFiles/first-c-program.dir/src/01-first-c-program/hello.c.s
+.PHONY : src/01-first-c-program/hello.c.s
+
+src/02-data-type/data-type.o: src/02-data-type/data-type.c.o
+.PHONY : src/02-data-type/data-type.o
+
+# target to build an object file
+src/02-data-type/data-type.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data-type.dir/build.make CMakeFiles/data-type.dir/src/02-data-type/data-type.c.o
+.PHONY : src/02-data-type/data-type.c.o
+
+src/02-data-type/data-type.i: src/02-data-type/data-type.c.i
+.PHONY : src/02-data-type/data-type.i
+
+# target to preprocess a source file
+src/02-data-type/data-type.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data-type.dir/build.make CMakeFiles/data-type.dir/src/02-data-type/data-type.c.i
+.PHONY : src/02-data-type/data-type.c.i
+
+src/02-data-type/data-type.s: src/02-data-type/data-type.c.s
+.PHONY : src/02-data-type/data-type.s
+
+# target to generate assembly for a file
+src/02-data-type/data-type.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data-type.dir/build.make CMakeFiles/data-type.dir/src/02-data-type/data-type.c.s
+.PHONY : src/02-data-type/data-type.c.s
 
 # Help Target
 help:
@@ -161,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... c_tutorial"
-	@echo "... 01-first-c-program/hello.o"
-	@echo "... 01-first-c-program/hello.i"
-	@echo "... 01-first-c-program/hello.s"
+	@echo "... data-type"
+	@echo "... first-c-program"
+	@echo "... src/01-first-c-program/hello.o"
+	@echo "... src/01-first-c-program/hello.i"
+	@echo "... src/01-first-c-program/hello.s"
+	@echo "... src/02-data-type/data-type.o"
+	@echo "... src/02-data-type/data-type.i"
+	@echo "... src/02-data-type/data-type.s"
 .PHONY : help
 
 

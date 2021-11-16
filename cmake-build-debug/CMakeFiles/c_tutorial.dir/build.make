@@ -66,27 +66,27 @@ include CMakeFiles/c_tutorial.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/c_tutorial.dir/flags.make
 
-CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.o: CMakeFiles/c_tutorial.dir/flags.make
-CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.o: ../01-first-c-program/hello.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.o -c /Users/hang/Study/lang/C/c-tutorial/01-first-c-program/hello.c
+CMakeFiles/c_tutorial.dir/src/01-first-c-program/hello.c.o: CMakeFiles/c_tutorial.dir/flags.make
+CMakeFiles/c_tutorial.dir/src/01-first-c-program/hello.c.o: ../src/01-first-c-program/hello.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/c_tutorial.dir/src/01-first-c-program/hello.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/c_tutorial.dir/src/01-first-c-program/hello.c.o -c /Users/hang/Study/lang/C/c-tutorial/src/01-first-c-program/hello.c
 
-CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hang/Study/lang/C/c-tutorial/01-first-c-program/hello.c > CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.i
+CMakeFiles/c_tutorial.dir/src/01-first-c-program/hello.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/c_tutorial.dir/src/01-first-c-program/hello.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hang/Study/lang/C/c-tutorial/src/01-first-c-program/hello.c > CMakeFiles/c_tutorial.dir/src/01-first-c-program/hello.c.i
 
-CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hang/Study/lang/C/c-tutorial/01-first-c-program/hello.c -o CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.s
+CMakeFiles/c_tutorial.dir/src/01-first-c-program/hello.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/c_tutorial.dir/src/01-first-c-program/hello.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hang/Study/lang/C/c-tutorial/src/01-first-c-program/hello.c -o CMakeFiles/c_tutorial.dir/src/01-first-c-program/hello.c.s
 
 # Object files for target c_tutorial
 c_tutorial_OBJECTS = \
-"CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.o"
+"CMakeFiles/c_tutorial.dir/src/01-first-c-program/hello.c.o"
 
 # External object files for target c_tutorial
 c_tutorial_EXTERNAL_OBJECTS =
 
-c_tutorial: CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.o
+c_tutorial: CMakeFiles/c_tutorial.dir/src/01-first-c-program/hello.c.o
 c_tutorial: CMakeFiles/c_tutorial.dir/build.make
 c_tutorial: CMakeFiles/c_tutorial.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable c_tutorial"

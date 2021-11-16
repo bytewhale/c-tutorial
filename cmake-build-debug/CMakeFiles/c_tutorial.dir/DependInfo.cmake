@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/hang/Study/lang/C/c-tutorial/01-first-c-program/hello.c" "/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles/c_tutorial.dir/01-first-c-program/hello.c.o"
+  "/Users/hang/Study/lang/C/c-tutorial/src/01-first-c-program/hello.c" "/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles/c_tutorial.dir/src/01-first-c-program/hello.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
