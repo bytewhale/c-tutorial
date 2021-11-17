@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/printf.dir/all
 all: CMakeFiles/data-type.dir/all
 all: CMakeFiles/first-c-program.dir/all
 .PHONY : all
@@ -72,9 +73,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/printf.dir/clean
 clean: CMakeFiles/data-type.dir/clean
 clean: CMakeFiles/first-c-program.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/printf.dir
+
+# All Build rule for target.
+CMakeFiles/printf.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target printf"
+.PHONY : CMakeFiles/printf.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/printf.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/printf.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/printf.dir/rule
+
+# Convenience name for target.
+printf: CMakeFiles/printf.dir/rule
+.PHONY : printf
+
+# clean rule for target.
+CMakeFiles/printf.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/clean
+.PHONY : CMakeFiles/printf.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/data-type.dir

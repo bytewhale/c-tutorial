@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named printf
+
+# Build rule for target.
+printf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 printf
+.PHONY : printf
+
+# fast build rule for target.
+printf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
+.PHONY : printf/fast
+
+#=============================================================================
 # Target rules for targets named data-type
 
 # Build rule for target.
@@ -190,6 +203,30 @@ src/02-data-type/data-type.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data-type.dir/build.make CMakeFiles/data-type.dir/src/02-data-type/data-type.c.s
 .PHONY : src/02-data-type/data-type.c.s
 
+src/02-data-type/printf.o: src/02-data-type/printf.c.o
+.PHONY : src/02-data-type/printf.o
+
+# target to build an object file
+src/02-data-type/printf.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/02-data-type/printf.c.o
+.PHONY : src/02-data-type/printf.c.o
+
+src/02-data-type/printf.i: src/02-data-type/printf.c.i
+.PHONY : src/02-data-type/printf.i
+
+# target to preprocess a source file
+src/02-data-type/printf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/02-data-type/printf.c.i
+.PHONY : src/02-data-type/printf.c.i
+
+src/02-data-type/printf.s: src/02-data-type/printf.c.s
+.PHONY : src/02-data-type/printf.s
+
+# target to generate assembly for a file
+src/02-data-type/printf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/02-data-type/printf.c.s
+.PHONY : src/02-data-type/printf.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,12 +237,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... data-type"
 	@echo "... first-c-program"
+	@echo "... printf"
 	@echo "... src/01-first-c-program/hello.o"
 	@echo "... src/01-first-c-program/hello.i"
 	@echo "... src/01-first-c-program/hello.s"
 	@echo "... src/02-data-type/data-type.o"
 	@echo "... src/02-data-type/data-type.i"
 	@echo "... src/02-data-type/data-type.s"
+	@echo "... src/02-data-type/printf.o"
+	@echo "... src/02-data-type/printf.i"
+	@echo "... src/02-data-type/printf.s"
 .PHONY : help
 
 

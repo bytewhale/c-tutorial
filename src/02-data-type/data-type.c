@@ -27,6 +27,10 @@ int main() {
     short num = 10;
     printf("%d\n", num);
 
+    // 长整型
+    long long id = 1928348384;
+    printf("%lld\n", id);
+
     // 单精度浮点数
     float weight = 11.1;
     printf("%f\n", weight);

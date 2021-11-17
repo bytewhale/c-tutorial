@@ -1,4 +1,5 @@
 /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles/printf.dir
 /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles/data-type.dir
 /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles/first-c-program.dir
