@@ -45,7 +45,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/03-variable.dir/DependInfo.cmake"
   "CMakeFiles/printf.dir/DependInfo.cmake"
+  "CMakeFiles/operator.dir/DependInfo.cmake"
   "CMakeFiles/data-type.dir/DependInfo.cmake"
   "CMakeFiles/first-c-program.dir/DependInfo.cmake"
   )

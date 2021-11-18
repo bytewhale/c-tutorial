@@ -63,7 +63,9 @@ CMAKE_BINARY_DIR = /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/03-variable.dir/all
 all: CMakeFiles/printf.dir/all
+all: CMakeFiles/operator.dir/all
 all: CMakeFiles/data-type.dir/all
 all: CMakeFiles/first-c-program.dir/all
 .PHONY : all
@@ -73,10 +75,38 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/03-variable.dir/clean
 clean: CMakeFiles/printf.dir/clean
+clean: CMakeFiles/operator.dir/clean
 clean: CMakeFiles/data-type.dir/clean
 clean: CMakeFiles/first-c-program.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/03-variable.dir
+
+# All Build rule for target.
+CMakeFiles/03-variable.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/03-variable.dir/build.make CMakeFiles/03-variable.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/03-variable.dir/build.make CMakeFiles/03-variable.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target 03-variable"
+.PHONY : CMakeFiles/03-variable.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/03-variable.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/03-variable.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/03-variable.dir/rule
+
+# Convenience name for target.
+03-variable: CMakeFiles/03-variable.dir/rule
+.PHONY : 03-variable
+
+# clean rule for target.
+CMakeFiles/03-variable.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/03-variable.dir/build.make CMakeFiles/03-variable.dir/clean
+.PHONY : CMakeFiles/03-variable.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/printf.dir
@@ -85,7 +115,7 @@ clean: CMakeFiles/first-c-program.dir/clean
 CMakeFiles/printf.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target printf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target printf"
 .PHONY : CMakeFiles/printf.dir/all
 
 # Build rule for subdir invocation for target.
@@ -105,13 +135,39 @@ CMakeFiles/printf.dir/clean:
 .PHONY : CMakeFiles/printf.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/operator.dir
+
+# All Build rule for target.
+CMakeFiles/operator.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target operator"
+.PHONY : CMakeFiles/operator.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/operator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/operator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/operator.dir/rule
+
+# Convenience name for target.
+operator: CMakeFiles/operator.dir/rule
+.PHONY : operator
+
+# clean rule for target.
+CMakeFiles/operator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/clean
+.PHONY : CMakeFiles/operator.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/data-type.dir
 
 # All Build rule for target.
 CMakeFiles/data-type.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data-type.dir/build.make CMakeFiles/data-type.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data-type.dir/build.make CMakeFiles/data-type.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target data-type"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target data-type"
 .PHONY : CMakeFiles/data-type.dir/all
 
 # Build rule for subdir invocation for target.
@@ -137,7 +193,7 @@ CMakeFiles/data-type.dir/clean:
 CMakeFiles/first-c-program.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-c-program.dir/build.make CMakeFiles/first-c-program.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/first-c-program.dir/build.make CMakeFiles/first-c-program.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target first-c-program"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hang/Study/lang/C/c-tutorial/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target first-c-program"
 .PHONY : CMakeFiles/first-c-program.dir/all
 
 # Build rule for subdir invocation for target.

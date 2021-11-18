@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named 03-variable
+
+# Build rule for target.
+03-variable: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 03-variable
+.PHONY : 03-variable
+
+# fast build rule for target.
+03-variable/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/03-variable.dir/build.make CMakeFiles/03-variable.dir/build
+.PHONY : 03-variable/fast
+
+#=============================================================================
 # Target rules for targets named printf
 
 # Build rule for target.
@@ -128,6 +141,19 @@ printf: cmake_check_build_system
 printf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
 .PHONY : printf/fast
+
+#=============================================================================
+# Target rules for targets named operator
+
+# Build rule for target.
+operator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 operator
+.PHONY : operator
+
+# fast build rule for target.
+operator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/build
+.PHONY : operator/fast
 
 #=============================================================================
 # Target rules for targets named data-type
@@ -227,6 +253,54 @@ src/02-data-type/printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/src/02-data-type/printf.c.s
 .PHONY : src/02-data-type/printf.c.s
 
+src/03-variable/03-variable.o: src/03-variable/03-variable.c.o
+.PHONY : src/03-variable/03-variable.o
+
+# target to build an object file
+src/03-variable/03-variable.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/03-variable.dir/build.make CMakeFiles/03-variable.dir/src/03-variable/03-variable.c.o
+.PHONY : src/03-variable/03-variable.c.o
+
+src/03-variable/03-variable.i: src/03-variable/03-variable.c.i
+.PHONY : src/03-variable/03-variable.i
+
+# target to preprocess a source file
+src/03-variable/03-variable.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/03-variable.dir/build.make CMakeFiles/03-variable.dir/src/03-variable/03-variable.c.i
+.PHONY : src/03-variable/03-variable.c.i
+
+src/03-variable/03-variable.s: src/03-variable/03-variable.c.s
+.PHONY : src/03-variable/03-variable.s
+
+# target to generate assembly for a file
+src/03-variable/03-variable.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/03-variable.dir/build.make CMakeFiles/03-variable.dir/src/03-variable/03-variable.c.s
+.PHONY : src/03-variable/03-variable.c.s
+
+src/04-operator/operator.o: src/04-operator/operator.c.o
+.PHONY : src/04-operator/operator.o
+
+# target to build an object file
+src/04-operator/operator.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/src/04-operator/operator.c.o
+.PHONY : src/04-operator/operator.c.o
+
+src/04-operator/operator.i: src/04-operator/operator.c.i
+.PHONY : src/04-operator/operator.i
+
+# target to preprocess a source file
+src/04-operator/operator.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/src/04-operator/operator.c.i
+.PHONY : src/04-operator/operator.c.i
+
+src/04-operator/operator.s: src/04-operator/operator.c.s
+.PHONY : src/04-operator/operator.s
+
+# target to generate assembly for a file
+src/04-operator/operator.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/src/04-operator/operator.c.s
+.PHONY : src/04-operator/operator.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -235,8 +309,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... 03-variable"
 	@echo "... data-type"
 	@echo "... first-c-program"
+	@echo "... operator"
 	@echo "... printf"
 	@echo "... src/01-first-c-program/hello.o"
 	@echo "... src/01-first-c-program/hello.i"
@@ -247,6 +323,12 @@ help:
 	@echo "... src/02-data-type/printf.o"
 	@echo "... src/02-data-type/printf.i"
 	@echo "... src/02-data-type/printf.s"
+	@echo "... src/03-variable/03-variable.o"
+	@echo "... src/03-variable/03-variable.i"
+	@echo "... src/03-variable/03-variable.s"
+	@echo "... src/04-operator/operator.o"
+	@echo "... src/04-operator/operator.i"
+	@echo "... src/04-operator/operator.s"
 .PHONY : help
 
 
